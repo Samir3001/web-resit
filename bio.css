@@ -1,0 +1,72 @@
+html{
+	margin: 5px;
+	border: 2px solid black;
+	background: #E0BBE4;	
+}
+header{
+	width:100%;
+	font-size: 50px;
+	padding: 2px;
+	text-align: center;
+	font-family: serif;
+	font-style: 'dancing script';
+}
+body{
+}
+.nav{
+	display: flex;
+	flex-direction: row;
+}	
+.sec{
+	display: flex;
+	flex-direction: column;
+	width:24%;
+	margin: 20px;
+}
+.c > div{
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+}
+.image {
+	align-self: center;
+	background: black;
+	padding:1%;
+	width: 70%;
+}
+a.active, .nav a:hover{
+	background-color: black;
+	color: black;
+	width: 100%;
+}
+.ab{
+	font-size: 50px;
+}
+section{
+	font-size: 25px;
+}
+.se{
+	display: flex;
+	flex-direction: row;
+}
+.text{
+	width: 59%;
+	
+}
+.img{
+	align-self: center;
+	width: 38%;
+	padding: 1%;
+	background: black;
+}
+@media screen and (max-width: 650px){
+	.nav{flex-direction:column}
+	.section{flex-direction:column;}
+	.sec{width:95%;order:1;)}	
+	.image{width:95%;order:2;}
+	.se{flex-direction: column;}
+	.text{width:95%;order: 3;}
+	.img{width: 95%;order: 4;}
+}
